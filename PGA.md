@@ -88,5 +88,6 @@ Line L = {-4, 5, 3}; // Represents 3x - 4y + 5 = 0
 
 In **2D PGA**, a **bivector (e20, e01, e12)** represents a **line** in projective space.
 
-Would you like an example of **computing the intersection (meet) of two lines** using this representation? 🚀
+
+
 
