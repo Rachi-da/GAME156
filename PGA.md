@@ -5,18 +5,22 @@ In **2D Projective Geometric Algebra (PGA)**, `{ float e20, e01, e12; }` represe
 #### **1. What Does a Bivector Represent in 2D PGA?**
 - In **2D PGA**, a bivector represents an **oriented line**.
 - Lines in homogeneous coordinates are typically written as:
-  \[
+
+  $$
   L = e_{12} a + e_{20} b + e_{01} c
-  \]
+  $$
+
   where:
   - \( e_{12} \) represents the **x-coefficient** of the line.
   - \( e_{20} \) represents the **y-coefficient** of the line.
   - \( e_{01} \) represents the **constant term** (the offset from the origin).
 
 - The equation of a line in standard **homogeneous coordinates** is:
-  \[
+
+  $$
   ax + by + c = 0
-  \]
+  $$
+
   which corresponds to:
   - \( e_{12} = a \)
   - \( e_{20} = b \)
@@ -44,21 +48,25 @@ The notation \( e_{12}, e_{20}, e_{01} \) comes from **Geometric Algebra basis b
 - `e12` → corresponds to the **x-coefficient** of the line.
 
 Thus, in terms of the familiar line equation \( ax + by + c = 0 \):
-\[
-L = e_{12} x + e_{20} y + e_{01} = 0
-\]
+
+  $$
+  L = e_{12} x + e_{20} y + e_{01} = 0
+  $$
 
 ---
 
 #### **4. Example: Using Bivectors for Lines**
 Suppose you have the line equation:
-\[
-3x - 4y + 5 = 0
-\]
+
+  $$
+  3x - 4y + 5 = 0
+  $$
+
 The **PGA representation** would be:
-\[
-e_{12} = 3, \quad e_{20} = -4, \quad e_{01} = 5
-\]
+
+  $$
+  e_{12} = 3, \quad e_{20} = -4, \quad e_{01} = 5
+  $$
 
 And in C++:
 ```cpp
@@ -81,3 +89,4 @@ Line L = {-4, 5, 3}; // Represents 3x - 4y + 5 = 0
 In **2D PGA**, a **bivector (e20, e01, e12)** represents a **line** in projective space.
 
 Would you like an example of **computing the intersection (meet) of two lines** using this representation? 🚀
+
